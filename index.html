@@ -21,6 +21,7 @@
                 <li><a href="#programs">Programe</a></li>
                 <li><a href="#schedule">Program Săptămânal</a></li>
                 <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#rental">Închiriere</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -28,10 +29,6 @@
     
     <section id="home" class="hero">
         <div class="container">
-            <div class="racing-cars">
-                <span class="car"></span>
-                <span class="car"></span>
-            </div>
             <h1>Bine ați venit la Programul After-School Casa Denis</h1>
             <p>Un mediu sigur și distractiv unde copiii pot învăța, se pot juca și dezvolta după orele de școală. 
                Oferim o varietate de activități, inclusiv ajutor la teme, arte și meserii, sport și multe altele!</p>
@@ -122,10 +119,6 @@
     <section id="gallery" class="gallery">
         <div class="container">
             <h2>Galerie Foto</h2>
-            <div class="racing-cars">
-                <span class="car"></span>
-                <span class="car"></span>
-            </div>
             <div class="gallery-grid">
                 <div class="gallery-item">
                     <img src="images/gallery1.jpg" alt="Copii făcând teme">
@@ -150,6 +143,39 @@
                 <div class="gallery-item">
                     <img src="images/gallery6.jpg" alt="Sesiune de muzică">
                     <span class="caption">Sesiune de muzică</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="rental" class="rental">
+        <div class="container">
+            <h2>Închiriază Locația Noastră</h2>
+            <p>Organizați evenimente memorabile pentru copii sau adulți la Casa Denis! Închiriați locația noastră pentru 1500 de lei/24 de ore. Pachetul include un loc de grătar, tacâmuri de unică folosință (pahare, farfurii, tacâmuri, paie) și acces la două frigidere pentru păstrarea alimentelor și băuturilor.</p>
+            <div class="rental-grid">
+                <div class="rental-item">
+                    <img src="images/rental1.jpg" alt="Locație eveniment">
+                    <span class="caption">Locație eveniment</span>
+                </div>
+                <div class="rental-item">
+                    <img src="images/rental2.jpg" alt="Zonă de grătar">
+                    <span class="caption">Zonă de grătar</span>
+                </div>
+                <div class="rental-item">
+                    <img src="images/rental3.jpg" alt="Spațiu interior">
+                    <span class="caption">Spațiu interior</span>
+                </div>
+                <div class="rental-item">
+                    <img src="images/rental4.jpg" alt="Zonă de joacă">
+                    <span class="caption">Zonă de joacă</span>
+                </div>
+                <div class="rental-item">
+                    <img src="images/rental5.jpg" alt="Decor eveniment">
+                    <span class="caption">Decor eveniment</span>
+                </div>
+                <div class="rental-item">
+                    <img src="images/rental6.jpg" alt="Spațiu exterior">
+                    <span class="caption">Spațiu exterior</span>
                 </div>
             </div>
         </div>
@@ -204,6 +230,7 @@
                         <li><a href="#programs">Programe</a></li>
                         <li><a href="#schedule">Program Săptămânal</a></li>
                         <li><a href="#gallery">Galerie</a></li>
+                        <li><a href="#rental">Închiriere</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -223,7 +250,7 @@
     </footer>
 
     <script>
-        const sections = document.querySelectorAll('.hero, .features, .schedule, .gallery, .contact');
+        const sections = document.querySelectorAll('.hero, .features, .schedule, .gallery, .rental, .contact');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
