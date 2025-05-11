@@ -24,7 +24,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0; /* Adjusted from -1 */
+    z-index: 0;
     pointer-events: none;
 }
 
@@ -32,7 +32,7 @@ body {
     position: absolute;
     width: 80px;
     height: 80px;
-    opacity: 0.5; /* Increased from 0.3 */
+    opacity: 0.5;
     transition: transform 0.3s ease;
 }
 
@@ -43,7 +43,7 @@ body {
 }
 
 .disney-character:nth-child(2) {
-    top: 20%;
+    top: 15%;
     right: 10%;
     animation: bounce 4s ease-in-out infinite;
 }
@@ -70,6 +70,90 @@ body {
     bottom: 10%;
     right: 5%;
     animation: fade 6s ease-in-out infinite;
+}
+
+.disney-character:nth-child(7) {
+    top: 5%;
+    left: 35%;
+    animation: float 5s ease-in-out infinite;
+}
+
+.disney-character:nth-child(8) {
+    top: 25%;
+    right: 30%;
+    animation: bounce 6s ease-in-out infinite;
+}
+
+.disney-character:nth-child(9) {
+    bottom: 20%;
+    left: 40%;
+    animation: fade 4s ease-in-out infinite;
+}
+
+.disney-character:nth-child(10) {
+    bottom: 30%;
+    right: 15%;
+    animation: float 8s ease-in-out infinite;
+}
+
+.disney-character:nth-child(11) {
+    top: 20%;
+    left: 10%;
+    animation: bounce 5s ease-in-out infinite;
+}
+
+.disney-character:nth-child(12) {
+    bottom: 5%;
+    right: 25%;
+    animation: fade 7s ease-in-out infinite;
+}
+
+.disney-character:nth-child(13) {
+    top: 35%;
+    left: 45%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.disney-character:nth-child(14) {
+    top: 40%;
+    right: 5%;
+    animation: bounce 4s ease-in-out infinite;
+}
+
+.disney-character:nth-child(15) {
+    bottom: 35%;
+    left: 20%;
+    animation: fade 5s ease-in-out infinite;
+}
+
+.disney-character:nth-child(16) {
+    bottom: 15%;
+    right: 35%;
+    animation: float 7s ease-in-out infinite;
+}
+
+.disney-character:nth-child(17) {
+    top: 15%;
+    left: 50%;
+    animation: bounce 6s ease-in-out infinite;
+}
+
+.disney-character:nth-child(18) {
+    bottom: 25%;
+    right: 10%;
+    animation: fade 5s ease-in-out infinite;
+}
+
+.disney-character:nth-child(19) {
+    top: 25%;
+    left: 30%;
+    animation: float 8s ease-in-out infinite;
+}
+
+.disney-character:nth-child(20) {
+    bottom: 10%;
+    right: 40%;
+    animation: bounce 4s ease-in-out infinite;
 }
 
 /* Header Styles */
@@ -125,7 +209,7 @@ nav ul li a:hover {
     padding: 80px 0;
     text-align: center;
     position: relative;
-    overflow: visible; /* Adjusted from hidden */
+    overflow: visible;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -292,7 +376,7 @@ nav ul li a:hover {
     background-color: white;
     padding: 80px 0;
     position: relative;
-    overflow: visible; /* Adjusted from hidden */
+    overflow: visible;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -430,7 +514,7 @@ nav ul li a:hover {
     text-align: center;
     background-color: white;
     position: relative;
-    overflow: visible; /* Adjusted from hidden */
+    overflow: visible;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -512,7 +596,7 @@ nav ul li a:hover {
     padding: 80px 0;
     text-align: center;
     position: relative;
-    overflow: visible; /* Adjusted from hidden */
+    overflow: visible;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
