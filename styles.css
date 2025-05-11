@@ -1,5 +1,5 @@
 /* General Styles */
-body { 
+body {
     font-family: 'Poppins', 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -15,6 +15,61 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+/* Disney Characters */
+.disney-characters {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.disney-character {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    opacity: 0.3;
+    transition: transform 0.3s ease;
+}
+
+.disney-character:nth-child(1) {
+    top: 10%;
+    left: 5%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.disney-character:nth-child(2) {
+    top: 20%;
+    right: 10%;
+    animation: bounce 4s ease-in-out infinite;
+}
+
+.disney-character:nth-child(3) {
+    bottom: 15%;
+    left: 15%;
+    animation: fade 5s ease-in-out infinite;
+}
+
+.disney-character:nth-child(4) {
+    bottom: 25%;
+    right: 20%;
+    animation: float 7s ease-in-out infinite;
+}
+
+.disney-character:nth-child(5) {
+    top: 30%;
+    left: 25%;
+    animation: bounce 5s ease-in-out infinite;
+}
+
+.disney-character:nth-child(6) {
+    bottom: 10%;
+    right: 5%;
+    animation: fade 6s ease-in-out infinite;
 }
 
 /* Header Styles */
@@ -69,6 +124,8 @@ nav ul li a:hover {
     background-color: white;
     padding: 80px 0;
     text-align: center;
+    position: relative;
+    overflow: hidden;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -108,6 +165,8 @@ nav ul li a:hover {
     border-radius: 25px;
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: slideInUp 0.8s ease-out 0.4s;
     animation-fill-mode: backwards;
@@ -116,6 +175,23 @@ nav ul li a:hover {
 .cta-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.cta-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, rgba(255,255,255,0.5), transparent);
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.cta-button:hover::after {
+    width: 100px;
+    height: 100px;
 }
 
 /* Features Section Styles */
@@ -155,6 +231,8 @@ nav ul li a:hover {
     padding: 25px;
     width: 280px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     opacity: 0;
     animation: popUp 0.6s ease-out forwards;
@@ -167,6 +245,23 @@ nav ul li a:hover {
 .feature-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.feature-card::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, rgba(255,255,255,0.5), transparent);
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.feature-card:hover::after {
+    width: 200px;
+    height: 200px;
 }
 
 .feature-card img {
@@ -196,6 +291,8 @@ nav ul li a:hover {
 .schedule {
     background-color: white;
     padding: 80px 0;
+    position: relative;
+    overflow: hidden;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -332,6 +429,8 @@ nav ul li a:hover {
     padding: 80px 0;
     text-align: center;
     background-color: white;
+    position: relative;
+    overflow: hidden;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -412,6 +511,8 @@ nav ul li a:hover {
     background-color: white;
     padding: 80px 0;
     text-align: center;
+    position: relative;
+    overflow: hidden;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -479,12 +580,31 @@ nav ul li a:hover {
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .submit-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.submit-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, rgba(255,255,255,0.5), transparent);
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.submit-button:hover::after {
+    width: 100px;
+    height: 100px;
 }
 
 /* Footer Styles */
@@ -514,12 +634,12 @@ footer {
     font-family: 'Bubblegum Sans', 'Arial', sans-serif;
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: white; /* Changed from yellow */
+    color: white;
 }
 
 .footer-section p, .footer-section ul li a {
     font-size: 0.95rem;
-    color: white; /* Changed from yellow */
+    color: white;
 }
 
 .footer-section ul {
@@ -537,7 +657,7 @@ footer {
 }
 
 .footer-section ul li a:hover {
-    color: #FFF176; /* Soft yellow on hover */
+    color: #FFF176;
 }
 
 .social-icons {
@@ -607,6 +727,11 @@ footer {
     .hero p {
         font-size: 1rem;
     }
+    
+    .disney-character {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 /* Animation Keyframes */
@@ -638,4 +763,16 @@ footer {
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px) translateX(5px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes fade {
+    0% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+    100% { opacity: 0.3; }
 }
