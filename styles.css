@@ -42,20 +42,6 @@ body {
 .disney-character:nth-child(4) { bottom: 15%; right: 15%; animation: float 7s ease-in-out infinite; }
 .disney-character:nth-child(5) { top: 15%; left: 20%; animation: bounce 5s ease-in-out infinite; }
 .disney-character:nth-child(6) { bottom: 20%; right: 20%; animation: fade 6s ease-in-out infinite; }
-.disney-character:nth-child(7) { top: 20%; left: 25%; animation: float 5s ease-in-out infinite; }
-.disney-character:nth-child(8) { top: 25%; right: 25%; animation: bounce 6s ease-in-out infinite; }
-.disney-character:nth-child(9) { bottom: 25%; left: 30%; animation: fade 4s ease-in-out infinite; }
-.disney-character:nth-child(10) { bottom: 30%; right: 30%; animation: float 8s ease-in-out infinite; }
-.disney-character:nth-child(11) { top: 30%; left: 35%; animation: bounce 5s ease-in-out infinite; }
-.disney-character:nth-child(12) { bottom: 35%; right: 35%; animation: fade 7s ease-in-out infinite; }
-.disney-character:nth-child(13) { top: 35%; left: 40%; animation: float 6s ease-in-out infinite; }
-.disney-character:nth-child(14) { top: 40%; right: 40%; animation: bounce 4s ease-in-out infinite; }
-.disney-character:nth-child(15) { bottom: 40%; left: 45%; animation: fade 5s ease-in-out infinite; }
-.disney-character:nth-child(16) { bottom: 45%; right: 45%; animation: float 7s ease-in-out infinite; }
-.disney-character:nth-child(17) { top: 45%; left: 50%; animation: bounce 6s ease-in-out infinite; }
-.disney-character:nth-child(18) { bottom: 50%; right: 50%; animation: fade 5s ease-in-out infinite; }
-.disney-character:nth-child(19) { top: 50%; left: 55%; animation: float 8s ease-in-out infinite; }
-.disney-character:nth-child(20) { bottom: 55%; right: 55%; animation: bounce 4s ease-in-out infinite; }
 
 /* Header Styles */
 header {
@@ -296,8 +282,15 @@ nav ul li a:hover {
     margin-bottom: 40px;
 }
 
+.schedule-table-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
 .schedule-table {
     width: 100%;
+    min-width: 600px; /* Ensures table doesn't shrink too much */
     border-collapse: collapse;
     margin-top: 20px;
     background-color: white;
@@ -307,9 +300,10 @@ nav ul li a:hover {
 }
 
 .schedule-table th, .schedule-table td {
-    padding: 15px;
+    padding: 12px;
     text-align: left;
     border-bottom: 1px solid #E0E0E0;
+    font-size: 0.9rem;
 }
 
 .schedule-table th {
@@ -792,6 +786,15 @@ footer {
     .disney-character {
         width: 50px;
         height: 50px;
+    }
+
+    .schedule h2 {
+        font-size: 1.8rem;
+    }
+
+    .schedule-table th, .schedule-table td {
+        padding: 8px;
+        font-size: 0.8rem;
     }
 }
 
