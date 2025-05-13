@@ -19,7 +19,6 @@
             <ul>
                 <li><a href="#home">Acasă</a></li>
                 <li><a href="#programs">Programe</a></li>
-                <li><a href="#schedule">Program Săptămânal</a></li>
                 <li><a href="#gallery">Galerie</a></li>
                 <li><a href="#rental">Închiriere</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -68,68 +67,6 @@
                     <h3>Activități STEM</h3>
                     <p>Experimente științifice distractive, noțiuni de bază de programare și provocări de inginerie pentru a inspira mințile tinere.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="schedule" class="schedule">
-        <div class="container">
-            <div class="disney-characters">
-                <img class="disney-character" src="images/photo1.png" alt="Stitch">
-                <img class="disney-character" src="images/photo2.png" alt="Elsa">
-                <img class="disney-character" src="images/photo3.png" alt="Mickey Mouse">
-                <img class="disney-character" src="images/photo4.png" alt="Simba">
-                <img class="disney-character" src="images/photo5.png" alt="Woody">
-                <img class="disney-character" src="images/photo6.png" alt="Moana">
-            </div>
-            <h2>Program Săptămânal</h2>
-            <div class="schedule-table-container">
-                <table class="schedule-table">
-                    <thead>
-                        <tr>
-                            <th>Ora</th>
-                            <th>Luni</th>
-                            <th>Marți</th>
-                            <th>Miercuri</th>
-                            <th>Joi</th>
-                            <th>Vineri</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>15:00 - 15:30</td>
-                            <td>Sosire & Gustare</td>
-                            <td>Sosire & Gustare</td>
-                            <td>Sosire & Gustare</td>
-                            <td>Sosire & Gustare</td>
-                            <td>Sosire & Gustare</td>
-                        </tr>
-                        <tr>
-                            <td>15:30 - 16:30</td>
-                            <td>Timpul Temelor</td>
-                            <td>Timpul Temelor</td>
-                            <td>Timpul Temelor</td>
-                            <td>Timpul Temelor</td>
-                            <td>Timpul Temelor</td>
-                        </tr>
-                        <tr>
-                            <td>16:30 - 17:30</td>
-                            <td>Sport & Jocuri</td>
-                            <td>Arte & Meserii</td>
-                            <td>Activități STEM</td>
-                            <td>Muzică & Dans</td>
-                            <td>Vineri Alegere Liberă</td>
-                        </tr>
-                        <tr>
-                            <td>17:30 - 18:00</td>
-                            <td>Timp de Lectură</td>
-                            <td>Activități de Echipă</td>
-                            <td>Joacă în Aer Liber</td>
-                            <td>Jocuri de Societate</td>
-                            <td>Timp de Film</td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </div>
     </section>
@@ -248,7 +185,7 @@
                     <label for="rental-message">Mesaj</label>
                     <textarea id="rental-message" name="rental-message" required></textarea>
                 </div>
-                <a href="mailto:sichetpatrick28@gmail.com?subject=Cerere%20Închiriere%20Casa%20Denis&body=Nume:%20[Completează]%0AEmail:%20[Completează]%0AMesaj:%20[Completează]" class="submit-button">Trimite Cerere</a>
+                <a href="#" class="submit-button" onclick="sendRentalRequest()">Trimite Cerere</a>
             </div>
         </div>
     </section>
@@ -289,7 +226,7 @@
                     <label for="message">Mesaj sau Întrebări</label>
                     <textarea id="message" name="message"></textarea>
                 </div>
-                <a href="mailto:sichetpatrick28@gmail.com?subject=Contact%20Casa%20Denis&body=Nume%20Părinte/Tutore:%20[Completează]%0AEmail:%20[Completează]%0ANumăr%20de%20Telefon:%20[Completează]%0ANumele%20Copilului:%20[Completează]%0AVârsta%20Copilului:%20[Completează]%0AMesaj:%20[Completează]" class="submit-button">Trimite Mesaj</a>
+                <a href="#" class="submit-button" onclick="sendContactMessage()">Trimite Mesaj</a>
             </div>
         </div>
     </section>
@@ -306,7 +243,6 @@
                     <ul>
                         <li><a href="#home">Acasă</a></li>
                         <li><a href="#programs">Programe</a></li>
-                        <li><a href="#schedule">Program Săptămânal</a></li>
                         <li><a href="#gallery">Galerie</a></li>
                         <li><a href="#rental">Închiriere</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -328,7 +264,8 @@
     </footer>
 
     <script>
-        const sections = document.querySelectorAll('.hero, .features, .schedule, .gallery, .rental, .contact, .rental-contact');
+        // Intersection Observer for section animations
+        const sections = document.querySelectorAll('.hero, .features, .gallery, .rental, .contact, .rental-contact');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -368,6 +305,56 @@
                 }
             });
         });
+
+        // Function to send rental request email
+        function sendRentalRequest() {
+            const name = document.getElementById('rental-name').value;
+            const email = document.getElementById('rental-email').value;
+            const message = document.getElementById('rental-message').value;
+
+            // Validate required fields
+            if (!name || !email || !message) {
+                alert('Vă rugăm să completați toate câmpurile obligatorii.');
+                return;
+            }
+
+            const subject = encodeURIComponent('Cerere Închiriere Casa Denis');
+            const body = encodeURIComponent(`Nume: ${name}\nEmail: ${email}\nMesaj: ${message}`);
+            const mailtoLink = `mailto:sichetpatrick28@gmail.com?subject=${subject}&body=${body}`;
+            
+            // Open the email client
+            window.location.href = mailtoLink;
+        }
+
+        // Function to send contact message email
+        function sendContactMessage() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const childName = document.getElementById('child-name').value;
+            const childAge = document.getElementById('child-age').value;
+            const message = document.getElementById('message').value;
+
+            // Validate required fields
+            if (!name || !email || !phone || !childName || !childAge) {
+                alert('Vă rugăm să completați toate câmpurile obligatorii.');
+                return;
+            }
+
+            const subject = encodeURIComponent('Contact Casa Denis');
+            const body = encodeURIComponent(
+                `Nume Părinte/Tutore: ${name}\n` +
+                `Email: ${email}\n` +
+                `Număr de Telefon: ${phone}\n` +
+                `Numele Copilului: ${childName}\n` +
+                `Vârsta Copilului: ${childAge}\n` +
+                `Mesaj: ${message || 'N/A'}`
+            );
+            const mailtoLink = `mailto:sichetpatrick28@gmail.com?subject=${subject}&body=${body}`;
+            
+            // Open the email client
+            window.location.href = mailtoLink;
+        }
     </script>
 </body>
 </html>
