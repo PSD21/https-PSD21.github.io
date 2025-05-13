@@ -36,129 +36,30 @@ body {
     transition: transform 0.3s ease;
 }
 
-.disney-character:nth-child(1) {
-    top: 10%;
-    left: 5%;
-    animation: float 6s ease-in-out infinite;
-}
-
-.disney-character:nth-child(2) {
-    top: 15%;
-    right: 10%;
-    animation: bounce 4s ease-in-out infinite;
-}
-
-.disney-character:nth-child(3) {
-    bottom: 15%;
-    left: 15%;
-    animation: fade 5s ease-in-out infinite;
-}
-
-.disney-character:nth-child(4) {
-    bottom: 25%;
-    right: 20%;
-    animation: float 7s ease-in-out infinite;
-}
-
-.disney-character:nth-child(5) {
-    top: 30%;
-    left: 25%;
-    animation: bounce 5s ease-in-out infinite;
-}
-
-.disney-character:nth-child(6) {
-    bottom: 10%;
-    right: 5%;
-    animation: fade 6s ease-in-out infinite;
-}
-
-.disney-character:nth-child(7) {
-    top: 5%;
-    left: 35%;
-    animation: float 5s ease-in-out infinite;
-}
-
-.disney-character:nth-child(8) {
-    top: 25%;
-    right: 30%;
-    animation: bounce 6s ease-in-out infinite;
-}
-
-.disney-character:nth-child(9) {
-    bottom: 20%;
-    left: 40%;
-    animation: fade 4s ease-in-out infinite;
-}
-
-.disney-character:nth-child(10) {
-    bottom: 30%;
-    right: 15%;
-    animation: float 8s ease-in-out infinite;
-}
-
-.disney-character:nth-child(11) {
-    top: 20%;
-    left: 10%;
-    animation: bounce 5s ease-in-out infinite;
-}
-
-.disney-character:nth-child(12) {
-    bottom: 5%;
-    right: 25%;
-    animation: fade 7s ease-in-out infinite;
-}
-
-.disney-character:nth-child(13) {
-    top: 35%;
-    left: 45%;
-    animation: float 6s ease-in-out infinite;
-}
-
-.disney-character:nth-child(14) {
-    top: 40%;
-    right: 5%;
-    animation: bounce 4s ease-in-out infinite;
-}
-
-.disney-character:nth-child(15) {
-    bottom: 35%;
-    left: 20%;
-    animation: fade 5s ease-in-out infinite;
-}
-
-.disney-character:nth-child(16) {
-    bottom: 15%;
-    right: 35%;
-    animation: float 7s ease-in-out infinite;
-}
-
-.disney-character:nth-child(17) {
-    top: 15%;
-    left: 50%;
-    animation: bounce 6s ease-in-out infinite;
-}
-
-.disney-character:nth-child(18) {
-    bottom: 25%;
-    right: 10%;
-    animation: fade 5s ease-in-out infinite;
-}
-
-.disney-character:nth-child(19) {
-    top: 25%;
-    left: 30%;
-    animation: float 8s ease-in-out infinite;
-}
-
-.disney-character:nth-child(20) {
-    bottom: 10%;
-    right: 40%;
-    animation: bounce 4s ease-in-out infinite;
-}
+.disney-character:nth-child(1) { top: 5%; left: 5%; animation: float 6s ease-in-out infinite; }
+.disney-character:nth-child(2) { top: 10%; right: 10%; animation: bounce 4s ease-in-out infinite; }
+.disney-character:nth-child(3) { bottom: 10%; left: 15%; animation: fade 5s ease-in-out infinite; }
+.disney-character:nth-child(4) { bottom: 15%; right: 15%; animation: float 7s ease-in-out infinite; }
+.disney-character:nth-child(5) { top: 15%; left: 20%; animation: bounce 5s ease-in-out infinite; }
+.disney-character:nth-child(6) { bottom: 20%; right: 20%; animation: fade 6s ease-in-out infinite; }
+.disney-character:nth-child(7) { top: 20%; left: 25%; animation: float 5s ease-in-out infinite; }
+.disney-character:nth-child(8) { top: 25%; right: 25%; animation: bounce 6s ease-in-out infinite; }
+.disney-character:nth-child(9) { bottom: 25%; left: 30%; animation: fade 4s ease-in-out infinite; }
+.disney-character:nth-child(10) { bottom: 30%; right: 30%; animation: float 8s ease-in-out infinite; }
+.disney-character:nth-child(11) { top: 30%; left: 35%; animation: bounce 5s ease-in-out infinite; }
+.disney-character:nth-child(12) { bottom: 35%; right: 35%; animation: fade 7s ease-in-out infinite; }
+.disney-character:nth-child(13) { top: 35%; left: 40%; animation: float 6s ease-in-out infinite; }
+.disney-character:nth-child(14) { top: 40%; right: 40%; animation: bounce 4s ease-in-out infinite; }
+.disney-character:nth-child(15) { bottom: 40%; left: 45%; animation: fade 5s ease-in-out infinite; }
+.disney-character:nth-child(16) { bottom: 45%; right: 45%; animation: float 7s ease-in-out infinite; }
+.disney-character:nth-child(17) { top: 45%; left: 50%; animation: bounce 6s ease-in-out infinite; }
+.disney-character:nth-child(18) { bottom: 50%; right: 50%; animation: fade 5s ease-in-out infinite; }
+.disney-character:nth-child(19) { top: 50%; left: 55%; animation: float 8s ease-in-out infinite; }
+.disney-character:nth-child(20) { bottom: 55%; right: 55%; animation: bounce 4s ease-in-out infinite; }
 
 /* Header Styles */
 header {
-    background-color: #1565C0; /* Deep blue */
+    background-color: #1565C0;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -174,7 +75,7 @@ header {
 
 /* Navigation Styles */
 nav {
-    background-color: #F57C00; /* Warm orange */
+    background-color: #F57C00;
     padding: 10px 0;
 }
 
@@ -199,7 +100,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #FFF176; /* Soft yellow */
+    color: #FFF176;
     transform: translateY(-2px);
 }
 
@@ -462,13 +363,13 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     margin-top: 20px;
 }
 
 .gallery-item {
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: 180px;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -506,6 +407,42 @@ nav ul li a:hover {
 
 .gallery-item:hover .caption {
     transform: translateY(0);
+}
+
+/* Gallery Popup Styles */
+.gallery-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.gallery-popup img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.close-btn:hover {
+    transform: scale(1.2);
 }
 
 /* Rental Section Styles */
@@ -588,6 +525,46 @@ nav ul li a:hover {
 
 .rental-item:hover .caption {
     transform: translateY(0);
+}
+
+/* Rental Contact Section Styles */
+.rental-contact {
+    background: linear-gradient(135deg, #FFF176 0%, #F5F5F5 100%);
+    padding: 80px 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.rental-contact.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.rental-contact h2 {
+    font-family: 'Bubblegum Sans', 'Arial', sans-serif;
+    font-size: 2.2rem;
+    color: #1565C0;
+    margin-bottom: 20px;
+}
+
+.rental-contact p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.rental-contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    animation: popUp 0.6s ease-out forwards;
 }
 
 /* Contact Section Styles */
