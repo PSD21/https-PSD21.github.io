@@ -3,361 +3,509 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa Denis - Program After-School</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <title>Casa Denis - After School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <!-- Header -->
+    <header class="sticky top-0 z-40">
         <div class="container">
-            <div class="logo">Casa Denis</div>
+            <div class="logo">
+                <img src="https://via.placeholder.com/40" alt="Casa Denis Logo">
+                <span>Casa Denis</span>
+            </div>
+            <nav>
+                <a href="#about">Despre noi</a>
+                <a href="#programs">Programe</a>
+                <a href="#schedule">Program</a>
+                <a href="#team">Echipa</a>
+                <a href="#gallery">Galerie</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a href="#" class="btn btn-primary btn-header">Înscrie-te acum</a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
         </div>
     </header>
-    
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#home">Acasă</a></li>
-                <li><a href="#programs">Programe</a></li>
-                <li><a href="#gallery">Galerie</a></li>
-                <li><a href="#rental">Închiriere</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="disney-characters">
-                <img class="disney-character" src="images/photo1.png" alt="Stitch">
-                <img class="disney-character" src="images/photo2.png" alt="Elsa">
-                <img class="disney-character" src="images/photo3.png" alt="Mickey Mouse">
-                <img class="disney-character" src="images/photo4.png" alt="Simba">
-                <img class="disney-character" src="images/photo5.png" alt="Woody">
-                <img class="disney-character" src="images/photo6.png" alt="Moana">
-            </div>
-            <h1>Bine ați venit la Programul After-School Casa Denis</h1>
-            <p>Un mediu sigur și distractiv unde copiii pot învăța, se pot juca și dezvolta după orele de școală. 
-               Oferim o varietate de activități, inclusiv ajutor la teme, arte și meserii, sport și multe altele!</p>
-            <a href="#contact" class="cta-button">Înscrie-te Acum</a>
-        </div>
-    </section>
-    
-    <section id="programs" class="features">
-        <div class="container">
-            <h2>Programele Noastre</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 70 70'><circle cx='35' cy='25' r='15' fill='#1565C0'/><path d='M25 40 Q35 50 45 40' stroke='#FFF176' stroke-width='3' fill='none'/><circle cx='30' cy='22' r='3' fill='white'/><circle cx='40' cy='22' r='3' fill='white'/></svg>" alt="Ajutor la Teme">
-                    <h3>Ajutor la Teme</h3>
-                    <p>Tutorii noștri calificați oferă asistență cu temele, asigurându-se că copilul dvs. își completează sarcinile și înțelege materialul.</p>
-                </div>
-                <div class="feature-card">
-                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 70 70'><circle cx='35' cy='25' r='15' fill='#F57C00'/><path d='M25 40 Q35 50 45 40' stroke='#FFF176' stroke-width='3' fill='none'/><circle cx='30' cy='22' r='3' fill='white'/><circle cx='40' cy='22' r='3' fill='white'/></svg>" alt="Arte și Meserii">
-                    <h3>Arte și Meserii</h3>
-                    <p>Încurajăm creativitatea prin diverse proiecte artistice, desen, pictură și activități de artizanat.</p>
-                </div>
-                <div class="feature-card">
-                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 70 70'><circle cx='35' cy='25' r='15' fill='#FFF176'/><path d='M25 40 Q35 50 45 40' stroke='#1565C0' stroke-width='3' fill='none'/><circle cx='30' cy='22' r='3' fill='white'/><circle cx='40' cy='22' r='3' fill='white'/></svg>" alt="Sport și Jocuri">
-                    <h3>Sport și Jocuri</h3>
-                    <p>Copiii rămân activi cu jocuri în interior și exterior, activități sportive și exerciții de consolidare a echipei.</p>
-                </div>
-                <div class="feature-card">
-                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 70 70'><circle cx='35' cy='25' r='15' fill='#E0E0E0'/><path d='M25 40 Q35 50 45 40' stroke='#F57C00' stroke-width='3' fill='none'/><circle cx='30' cy='22' r='3' fill='white'/><circle cx='40' cy='22' r='3' fill='white'/></svg>" alt="Activități STEM">
-                    <h3>Activități STEM</h3>
-                    <p>Experimente științifice distractive, noțiuni de bază de programare și provocări de inginerie pentru a inspira mințile tinere.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <h2>Galerie Foto</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="images/gallery1.jpg" alt="Copii făcând teme" data-fullsize="images/gallery1-full.jpg">
-                    <span class="caption">Copii făcând teme</span>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery2.jpg" alt="Proiect artistic" data-fullsize="images/gallery2-full.jpg">
-                    <span class="caption">Proiect artistic</span>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery3.jpg" alt="Jocuri în aer liber" data-fullsize="images/gallery3-full.jpg">
-                    <span class="caption">Jocuri în aer liber</span>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery4.jpg" alt="Experiment științific" data-fullsize="images/gallery4-full.jpg">
-                    <span class="caption">Experiment științific</span>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery5.jpg" alt="Activitate de grup" data-fullsize="images/gallery5-full.jpg">
-                    <span class="caption">Activitate de grup</span>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery6.jpg" alt="Sesiune de muzică" data-fullsize="images/gallery6-full.jpg">
-                    <span class="caption">Sesiune de muzică</span>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery7.jpg" alt="Atelier de pictură" data-fullsize="images/gallery7-full.jpg">
-                    <span class="caption">Atelier de pictură</span>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery8.jpg" alt="Jocuri de echipă" data-fullsize="images/gallery8-full.jpg">
-                    <span class="caption">Jocuri de echipă</span>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery9.jpg" alt="Proiect STEM" data-fullsize="images/gallery9-full.jpg">
-                    <span class="caption">Proiect STEM</span>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery10.jpg" alt="Dans și muzică" data-fullsize="images/gallery10-full.jpg">
-                    <span class="caption">Dans și muzică</span>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery11.jpg" alt="Activitate în aer liber" data-fullsize="images/gallery11-full.jpg">
-                    <span class="caption">Activitate în aer liber</span>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery12.jpg" alt="Zi de joacă" data-fullsize="images/gallery12-full.jpg">
-                    <span class="caption">Zi de joacă</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="rental" class="rental">
-        <div class="container">
-            <div class="disney-characters">
-                <img class="disney-character" src="images/photo1.png" alt="Stitch">
-                <img class="disney-character" src="images/photo2.png" alt="Elsa">
-                <img class="disney-character" src="images/photo3.png" alt="Mickey Mouse">
-                <img class="disney-character" src="images/photo4.png" alt="Simba">
-                <img class="disney-character" src="images/photo5.png" alt="Woody">
-                <img class="disney-character" src="images/photo6.png" alt="Moana">
-            </div>
-            <h2>Închiriază Locația Noastră</h2>
-            <p>Organizați evenimente memorabile pentru copii sau adulți la Casa Denis! Închiriați locația noastră pentru 1500 de lei/24 de ore. Pachetul include un loc de grătar, tacâmuri de unică folosință (pahare, farfurii, tacâmuri, paie) și acces la două frigidere pentru păstrarea alimentelor și băuturilor.</p>
-            <div class="rental-grid">
-                <div class="rental-item">
-                    <img src="images/rental1.jpg" alt="Locație eveniment">
-                    <span class="caption">Locație eveniment</span>
-                </div>
-                <div class="rental-item">
-                    <img src="images/rental2.jpg" alt="Zonă de grătar">
-                    <span class="caption">Zonă de grătar</span>
-                </div>
-                <div class="rental-item">
-                    <img src="images/rental3.jpg" alt="Spațiu interior">
-                    <span class="caption">Spațiu interior</span>
-                </div>
-                <div class="rental-item">
-                    <img src="images/rental4.jpg" alt="Zonă de joacă">
-                    <span class="caption">Zonă de joacă</span>
-                </div>
-                <div class="rental-item">
-                    <img src="images/rental5.jpg" alt="Decor eveniment">
-                    <span class="caption">Decor eveniment</span>
-                </div>
-                <div class="rental-item">
-                    <img src="images/rental6.jpg" alt="Spațiu exterior">
-                    <span class="caption">Spațiu exterior</span>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="rental-contact" class="rental-contact">
-        <div class="container">
-            <h2>Contact pentru Închiriere</h2>
-            <p>Interesat să închiriezi locația? Completează formularul de mai jos și te vom contacta în curând!</p>
-            <div class="rental-contact-form">
-                <div class="form-group">
-                    <label for="rental-name">Nume</label>
-                    <input type="text" id="rental-name" name="rental-name" required>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <h1>Un loc unde copiii <span>înfloresc</span></h1>
+                <p>Programul nostru after school oferă un mediu sigur, educativ și distractiv pentru copilul tău după orele de școală.</p>
+                <div class="hero-buttons flex gap-4">
+                    <a href="#" class="btn btn-primary btn-lg">Înscrie-te acum</a>
+                    <a href="#about" class="btn btn-outline btn-lg">
+                        Află mai multe
+                        <i class="fas fa-chevron-right ml-2"></i>
+                    </a>
                 </div>
-                <div class="form-group">
-                    <label for="rental-email">Email</label>
-                    <input type="email" id="rental-email" name="rental-email" required>
-                </div>
-                <div class="form-group">
-                    <label for="rental-message">Mesaj</label>
-                    <textarea id="rental-message" name="rental-message" required></textarea>
-                </div>
-                <a href="#" class="submit-button" onclick="sendRentalRequest()">Trimite Cerere</a>
-            </div>
-        </div>
-    </section>
-   <!-- Replace the contact form button and structure with a FormSubmit form -->
-
-<!-- ...existing code... -->
-<section id="contact" class="contact">
-    <div class="container">
-        <div class="disney-characters">
-            <img class="disney-character" src="images/photo1.png" alt="Stitch">
-            <img class="disney-character" src="images/photo2.png" alt="Elsa">
-            <img class="disney-character" src="images/photo3.png" alt="Mickey Mouse">
-            <img class="disney-character" src="images/photo4.png" alt="Simba">
-            <img class="disney-character" src="images/photo5.png" alt="Woody">
-            <img class="disney-character" src="images/photo6.png" alt="Moana">
-        </div>
-        <h2>Contactează-ne</h2>
-        <form action="https://formsubmit.co/64c8724fe78b2cfe6090545a0bf85ffc" method="POST" class="contact-form">
-            <div class="form-group">
-                <label for="name">Nume Părinte/Tutore</label>
-                <input type="text" id="name" name="Nume Părinte/Tutore" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="Email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Număr de Telefon</label>
-                <input type="tel" id="phone" name="Număr de Telefon" required>
-            </div>
-            <div class="form-group">
-                <label for="child-name">Numele Copilului</label>
-                <input type="text" id="child-name" name="Numele Copilului" required>
-            </div>
-            <div class="form-group">
-                <label for="child-age">Vârsta Copilului</label>
-                <input type="number" id="child-age" name="Vârsta Copilului" min="5" max="12" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Mesaj sau Întrebări</label>
-                <textarea id="message" name="Mesaj sau Întrebări"></textarea>
-            </div>
-            <button type="submit" class="submit-button">Trimite Mesaj</button>
-        </form>
-    </div>
-</section>
-<!-- ...existing code... -->
-    
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Casa Denis</h3>
-                    <p>Oferim îngrijire și activități de dezvoltare de calitate după școală pentru copiii din comunitatea noastră.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Link-uri Rapide</h3>
-                    <ul>
-                        <li><a href="#home">Acasă</a></li>
-                        <li><a href="#programs">Programe</a></li>
-                        <li><a href="#gallery">Galerie</a></li>
-                        <li><a href="#rental">Închiriere</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Informații de Contact</h3>
-                    <p>Strada Satmarel 402 <br>Satu Mare, România<br>Telefon: 0740490171 /0740096051<br>Email: casa.denis2025@gmail.com</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/share/16Unfd6ZEv/?mibextid=wwXIfr" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
-                        <a href="https://www.instagram.com/casa_denis_?igsh=MXZicXNxamE3bGgxYg%3D%3D&utm_source=qr" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+                <div class="hero-features">
+                    <div class="feature-card">
+                        <i class="far fa-clock"></i>
+                        <span>Program flexibil</span>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-book-open"></i>
+                        <span>Asistență teme</span>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-palette"></i>
+                        <span>Activități creative</span>
                     </div>
                 </div>
             </div>
-            <div class="copyright">
-                <p>© 2025 Programul After-School Casa Denis. Toate drepturile rezervate.</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="bg-white">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Despre Casa Denis</h2>
+                        <p>Casa Denis este un program after school dedicat dezvoltării armonioase a copiilor. Înființat în 2015, oferim un mediu sigur și stimulant unde copiii pot învăța, se pot juca și pot crește împreună.</p>
+                        <p>Misiunea noastră este să sprijinim dezvoltarea academică, socială și emoțională a fiecărui copil, oferind un program echilibrat de activități educative și recreative.</p>
+                        <ul class="about-features">
+                            <li>
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <span>Personal calificat și dedicat</span>
+                            </li>
+                            <li>
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <span>Spații moderne și sigure</span>
+                            </li>
+                            <li>
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <span>Program educațional variat</span>
+                            </li>
+                            <li>
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <span>Mese sănătoase și echilibrate</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://via.placeholder.com/600x400" alt="Copii la after school">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section id="programs" class="bg-purple-50">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Programele noastre</h2>
+                    <p>Oferim o varietate de programe educaționale și recreative pentru a satisface nevoile și interesele fiecărui copil.</p>
+                </div>
+                <div class="programs-grid">
+                    <div class="program-card">
+                        <div class="program-card-body">
+                            <div class="program-icon bg-pink-100">
+                                <i class="fas fa-book-open text-pink-600"></i>
+                            </div>
+                            <h3 class="text-pink-600">Asistență teme</h3>
+                            <p>Oferim sprijin pentru teme și proiecte școlare, asigurându-ne că fiecare copil înțelege și își completează sarcinile.</p>
+                        </div>
+                    </div>
+                    <div class="program-card">
+                        <div class="program-card-body">
+                            <div class="program-icon bg-purple-100">
+                                <i class="fas fa-palette text-purple-600"></i>
+                            </div>
+                            <h3 class="text-purple-600">Arte și meșteșuguri</h3>
+                            <p>Activități creative care stimulează imaginația și dezvoltă abilitățile motorii fine ale copiilor.</p>
+                        </div>
+                    </div>
+                    <div class="program-card">
+                        <div class="program-card-body">
+                            <div class="program-icon bg-yellow-100">
+                                <i class="fas fa-music text-yellow-600"></i>
+                            </div>
+                            <h3 class="text-yellow-600">Muzică și dans</h3>
+                            <p>Lecții de muzică și dans care încurajează exprimarea de sine și dezvoltarea talentelor artistice.</p>
+                        </div>
+                    </div>
+                    <div class="program-card">
+                        <div class="program-card-body">
+                            <div class="program-icon bg-green-100">
+                                <i class="fas fa-puzzle-piece text-green-600"></i>
+                            </div>
+                            <h3 class="text-green-600">Jocuri educative</h3>
+                            <p>Jocuri interactive care dezvoltă gândirea logică, memoria și abilitățile de rezolvare a problemelor.</p>
+                        </div>
+                    </div>
+                    <div class="program-card">
+                        <div class="program-card-body">
+                            <div class="program-icon bg-blue-100">
+                                <i class="fas fa-users text-blue-600"></i>
+                            </div>
+                            <h3 class="text-blue-600">Activități sociale</h3>
+                            <p>Activități de grup care dezvoltă abilitățile sociale și emoționale ale copiilor.</p>
+                        </div>
+                    </div>
+                    <div class="program-card">
+                        <div class="program-card-body">
+                            <div class="program-icon bg-orange-100">
+                                <i class="far fa-calendar-alt text-orange-600"></i>
+                            </div>
+                            <h3 class="text-orange-600">Excursii și evenimente</h3>
+                            <p>Excursii educative și evenimente speciale organizate periodic pentru a îmbogăți experiența copiilor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="bg-white">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Programul nostru</h2>
+                    <p>Oferim un program flexibil pentru a se potrivi nevoilor familiei tale.</p>
+                </div>
+                <div class="schedule-card">
+                    <div class="schedule-card-body">
+                        <div class="schedule-header">
+                            <div class="schedule-header-left">
+                                <i class="far fa-clock"></i>
+                                <span class="font-medium">Luni - Vineri</span>
+                            </div>
+                            <span>12:00 - 18:00</span>
+                        </div>
+                        <div class="mt-8">
+                            <h3 class="schedule-title">Program zilnic</h3>
+                            <div class="space-y-4">
+                                <div class="schedule-item">
+                                    <div class="schedule-time">12:00 - 13:00</div>
+                                    <div>Preluare de la școală și prânz</div>
+                                </div>
+                                <div class="schedule-item">
+                                    <div class="schedule-time">13:00 - 15:00</div>
+                                    <div>Teme și activități educaționale</div>
+                                </div>
+                                <div class="schedule-item">
+                                    <div class="schedule-time">15:00 - 15:30</div>
+                                    <div>Gustare și pauză</div>
+                                </div>
+                                <div class="schedule-item">
+                                    <div class="schedule-time">15:30 - 17:00</div>
+                                    <div>Activități recreative și creative</div>
+                                </div>
+                                <div class place-item">
+                                    <div class="schedule-time">17:00 - 18:00</div>
+                                    <div>Joc liber și preluare de către părinți</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="bg-purple-50">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Echipa noastră</h2>
+                    <p>Personalul nostru calificat și dedicat este pasionat de educația și bunăstarea copiilor.</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://via.placeholder.com/300" alt="Director">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="text-pink-600">Maria Popescu</h3>
+                            <p class="role">Director</p>
+                            <p>Cu peste 15 ani de experiență în educație, Maria coordonează programul nostru cu pasiune și dedicare.</p>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://via.placeholder.com/300" alt="Educator">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="text-purple-600">Alexandru Ionescu</h3>
+                            <p class="role">Educator</p>
+                            <p>Alexandru este specializat în pedagogie și ajută copiii să-și dezvolte abilitățile academice.</p>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://via.placeholder.com/300" alt="Instructor Arte">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="text-yellow-600">Elena Dumitrescu</h3>
+                            <p class="role">Instructor Arte</p>
+                            <p>Elena este artistă și educatoare, inspirând creativitatea și imaginația copiilor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="bg-white">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Galerie</h2>
+                    <p>Privește câteva momente din activitățile noastre zilnice.</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/300?text=Activity+1" alt="Activity 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/300?text=Activity+2" alt="Activity 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/300?text=Activity+3" alt="Activity 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/300?text=Activity+4" alt="Activity 4">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/300?text=Activity+5" alt="Activity 5">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/300?text=Activity+6" alt="Activity 6">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/300?text=Activity+7" alt="Activity 7">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/300?text=Activity+8" alt="Activity 8">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="bg-purple-50">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Ce spun părinții</h2>
+                    <p>Descoperă experiențele familiilor care au ales Casa Denis pentru copiii lor.</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar bg-pink-100">
+                                <span class="text-pink-600">AP</span>
+                            </div>
+                            <div class="testimonial-author">
+                                <h4>Ana Popa</h4>
+                                <p>Mamă a doi copii</p>
+                            </div>
+                        </div>
+                        <p>"Casa Denis a fost o binecuvântare pentru familia noastră. Copiii mei adoră activitățile și personalul, iar eu sunt liniștită știind că sunt în mâini bune."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar bg-purple-100">
+                                <span class="text-purple-600">MI</span>
+                            </div>
+                            <div class="testimonial-author">
+                                <h4>Mihai Ionescu</h4>
+                                <p>Tată</p>
+                            </div>
+                        </div>
+                        <p>"De când fiica mea frecventează Casa Denis, am observat o îmbunătățire semnificativă a rezultatelor școlare și a abilităților sociale."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar bg-yellow-100">
+                                <span class="text-yellow-600">CD</span>
+                            </divgay
+                            </div>
+                            <div class="testimonial-author">
+                                <h4>Cristina Dumitru</h4>
+                                <p>Mamă</p>
+                            </div>
+                        </div>
+                        <p>"Programul flexibil și diversitatea activităților oferite de Casa Denis sunt exact ceea ce căutam pentru copilul meu. Recomand cu încredere!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Contactează-ne</h2>
+                        <p>Suntem aici pentru a răspunde întrebărilor tale și pentru a-ți oferi mai multe informații despre programul nostru.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="contact-item-content">
+                                    <h3>Adresă</h3>
+                                    <p>Strada Exemplu nr. 123, București, România</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div class="contact-item-content">
+                                    <h3>Telefon</h3>
+                                    <p>+40 123 456 789</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div class="contact-item-content">
+                                    <h3>Email</h3>
+                                    <p>contact@casadenis.ro</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="far fa-clock"></i>
+                                <div class="contact-item-content">
+                                    <h3>Program de lucru</h3>
+                                    <p>Luni - Vineri: 12:00 - 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Trimite-ne un mesaj</h3>
+                        <form action="contact.php" method="POST">
+                            <!-- Dezactivare CAPTCHA -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Nume</label>
+                                    <input type="text" id="name" name="name" class="form-control" placeholder="Numele tău" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="email@exemplu.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="+40 123 456 789">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mesaj</label>
+                                <textarea机动车
+
+System: id="message" name="message" rows="4" class="form-control" placeholder="Scrie mesajul tău aici..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Trimite mesaj</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Pregătit să înscrii copilul tău?</h2>
+                <p>Oferă-i copilului tău oportunitatea de a învăța, de a se dezvolta și de a se distra într-un mediu sigur și stimulant.</p>
+                <a href="#" class="btn btn-white btn-lg">Înscrie-te acum</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">
+                        <img src="https://via.placeholder.com/40" alt="Casa Denis Logo">
+                        <span>Casa Denis</span>
+                    </div>
+                    <p class="footer-about">Un loc unde copiii învață, se dezvoltă și se distrează într-un mediu sigur și stimulant.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Link-uri rapide</h3>
+                    <ul>
+                        <li><a href="#about">Despre noi</a></li>
+                        <li><a href="#programs">Programe</a></li>
+                        <li><a href="#schedule">Program</a></li>
+                        <li><a href="#team">Echipa</a></li>
+                        <li><a href="#gallery">Galerie</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Program</h3>
+                    <ul>
+                        <li><i class="far fa-clock"></i> Luni - Vineri: 12:00 - 18:00</li>
+                        <li><i class="fas fa-phone"></i> +40 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> contact@casadenis.ro</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <script>document.write(new Date().getFullYear())</script> Casa Denis. Toate drepturile rezervate.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Intersection Observer for section animations
-        const sections = document.querySelectorAll('.hero, .features, .gallery, .rental, .contact, .rental-contact');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const nav = document.querySelector('nav');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
             });
-        }, { threshold: 0.2 });
-        sections.forEach(section => observer.observe(section));
 
-        // Gallery Popup Functionality
-        const galleryItems = document.querySelectorAll('.gallery-item img');
-        let popup = null;
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    // Close mobile menu if open
+                    if (window.innerWidth < 768) {
+                        nav.style.display = 'none';
+                    }
 
-        galleryItems.forEach(item => {
-            item.addEventListener('click', () => {
-                if (!popup) {
-                    popup = document.createElement('div');
-                    popup.className = 'gallery-popup';
-                    popup.innerHTML = `
-                        <span class="close-btn">×</span>
-                        <img src="${item.getAttribute('data-fullsize')}" alt="${item.alt}">
-                    `;
-                    document.body.appendChild(popup);
-
-                    const closeBtn = popup.querySelector('.close-btn');
-                    closeBtn.addEventListener('click', () => {
-                        document.body.removeChild(popup);
-                        popup = null;
-                    });
-
-                    popup.addEventListener('click', (e) => {
-                        if (e.target === popup) {
-                            document.body.removeChild(popup);
-                            popup = null;
-                        }
-                    });
-                }
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
             });
+
+            // Form submission (prevent default for demo)
+            const contactForm = document.querySelector('.contact-form form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Mulțumim pentru mesaj! Vom reveni cu un răspuns în curând.');
+                    this.reset();
+                });
+            }
         });
-
-        // Function to send rental request email
-        function sendRentalRequest() {
-            const name = document.getElementById('rental-name').value;
-            const email = document.getElementById('rental-email').value;
-            const message = document.getElementById('rental-message').value;
-
-            // Validate required fields
-            if (!name || !email || !message) {
-                alert('Vă rugăm să completați toate câmpurile obligatorii.');
-                return;
-            }
-
-            const subject = encodeURIComponent('Cerere Închiriere Casa Denis');
-            const body = encodeURIComponent(`Nume: ${name}\nEmail: ${email}\nMesaj: ${message}`);
-            const mailtoLink = `mailto:sichetpatrick28@gmail.com?subject=${subject}&body=${body}`;
-            
-            // Open the email client
-            window.location.href = mailtoLink;
-        }
-
-        // Function to send contact message email
-        function sendContactMessage() {
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const childName = document.getElementById('child-name').value;
-            const childAge = document.getElementById('child-age').value;
-            const message = document.getElementById('message').value;
-
-            // Validate required fields
-            if (!name || !email || !phone || !childName || !childAge) {
-                alert('Vă rugăm să completați toate câmpurile obligatorii.');
-                return;
-            }
-
-            const subject = encodeURIComponent('Contact Casa Denis');
-            const body = encodeURIComponent(
-                `Nume Părinte/Tutore: ${name}\n` +
-                `Email: ${email}\n` +
-                `Număr de Telefon: ${phone}\n` +
-                `Numele Copilului: ${childName}\n` +
-                `Vârsta Copilului: ${childAge}\n` +
-                `Mesaj: ${message || 'N/A'}`
-            );
-            const mailtoLink = `mailto:sichetpatrick28@gmail.com?subject=${subject}&body=${body}`;
-            
-            // Open the email client
-            window.location.href = mailtoLink;
-        }
     </script>
 </body>
 </html>
