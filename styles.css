@@ -1182,3 +1182,7 @@ footer {
         gap: 1rem;
     }
 }
+.logo-text {
+    font-size: 2rem; /* 32px, increased from likely 1.5rem or 24px */
+    font-weight: 600; /* Matches existing bold styling */
+}
